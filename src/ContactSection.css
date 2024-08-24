@@ -1,0 +1,17 @@
+/* src/components/ContactSection.css */
+.contact-section {
+  display: flex;
+  flex-direction: column; /* Use column layout */
+  align-items: center;    /* Center items horizontally */
+  background-color: black; /* Match the background color to black */
+  padding: 2.5rem;        /* Tailwind's p-10 in rem */
+}
+
+.contact-heading {
+  font-size: 2.25rem;     /* Tailwind's text-4xl */
+  font-weight: bold;      /* Tailwind's font-bold */
+  color: white;           /* Correct text color to white */
+  margin-bottom: 2rem;    /* Tailwind's mb-8 in rem */
+  border-bottom: 0.25rem solid #3b82f6; /* Tailwind's border-b-4 and border-blue-500 */
+  padding-bottom: 0.5rem; /* Tailwind's pb-2 */
+}

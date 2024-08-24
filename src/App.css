@@ -1,10 +1,35 @@
+body {
+  background-color: rgb(246, 243, 243);
+  color: white; /* Optional: Set the default text color to white for better readability */
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
+  background-color:rgb(243, 238, 238); /* Ensure App background is black */
+  color: white; /* Change text color to white for better contrast */
+  font-family: 'Arial', sans-serif;
+}
+/* src/App.css */
+.contact-heading {
+  font-size: 3rem; /* Large font size */
+  font-weight: 700; /* Bold text */
+  color: #2d3748; /* Dark gray color */
+  text-align: center; /* Center aligned text */
+  margin-top: 2.5rem; /* Spacing above the heading */
+  margin-bottom: 1.5rem; /* Spacing below the heading */
+  background: linear-gradient(to right, #131211, #333130); /* Gradient background */
+  -webkit-background-clip: text; /* Clip background to text */
+  -webkit-text-fill-color: transparent; /* Make text color transparent to show gradient */
+  text-shadow: 4px 2px 4px rgba(0, 0, 0, 0.3); /* Add subtle shadow to text */
+  padding-bottom: 0.5rem; /* Space below text */ 
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  transition: transform 0.3s ease;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -13,8 +38,12 @@
   }
 }
 
+.App-logo:hover {
+  transform: scale(1.1);
+}
+
 .App-header {
-  background-color: #282c34;
+  background-color: black; /* Ensure header background is black */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,10 +51,30 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.App-header h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.App-header p {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
 }
 
 .App-link {
   color: #61dafb;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.App-link:hover {
+  color: #21a1f1;
 }
 
 @keyframes App-logo-spin {
@@ -34,5 +83,15 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .App-header {
+    font-size: calc(8px + 2vmin);
+  }
+
+  .App-logo {
+    height: 30vmin;
   }
 }

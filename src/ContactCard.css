@@ -1,0 +1,120 @@
+
+.contact-card {
+    background-color:rgba(18, 35, 20, 0.864);
+    border-radius: 12px;
+    border-color:rgb(124, 169, 124);
+    border-width: 0.4rem;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    width: 320px;
+    margin: 20px;
+    text-align:flex-start;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden; 
+  }
+  
+  /* Expanded state on hover */
+  .contact-card:hover {
+    height: 400px; /* Adjust as needed to fit additional content */
+    box-shadow: 0 10px 20px rgb(47, 58, 47);
+  }
+  
+  /* Content within the card */
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card-content h2 {
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+  }
+  
+  .card-content p {
+    margin: 8px 0;
+    color:white;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+  }
+  
+  .card-content a {
+    color:whitesmoke;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content:safe;
+    margin-top: 10px;
+  }
+  
+  .card-content a:hover {
+    text-decoration: underline;
+  }
+  
+  .card-content .icon {
+    margin-right: 8px;
+    color:rgb(124, 169, 124);
+    
+  }
+  
+  .contact-btn {
+    background-color:rgb(124, 169, 124);
+    color:black;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    margin-top: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .contact-btn:hover {
+    background-color:rgb(62, 96, 62);
+    transform: scale(1.05);
+  }
+  
+  /* Hidden additional info, will be displayed on hover */
+  .additional-info {
+    display: none;
+    padding: 10px;
+    color:aliceblue;
+    font-size: 0.9rem;
+    text-align:flex-start;
+  }
+  
+  /* Show additional info on hover */
+  .contact-card:hover .additional-info {
+    display:block;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .contact-card {
+      width: 90%;
+      padding: 20px;
+    }
+  }
+  
+  @media only screen and (min-width: 900px) {
+    .contact-card {
+      width: 350px;
+    }
+  }
+  .contact-email {
+    color: white; /* Link color */
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.3s ease;
+  }
+  
+  .contact-email:hover {
+    text-decoration: underline; /* Link color on hover */
+  }
+  
+  .icon {
+    margin-right: 8px; /* Space between icon and text */
+  }
+ 

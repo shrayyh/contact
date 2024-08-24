@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from 'react';
+import ContactSection from './ContactSection';
+import './index.css'; // Import the CSS file for any custom styles if needed
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App bg-white text-gray-900 font-sans">
+      <h1 className="text-4xl font-bold text-center mt-10 mb-6 bg-gradient-to-r from-black to-gray-800 text-transparent bg-clip-text shadow-lg">
+        CONTACT SECTION
+      </h1>
+      <ContactSection />
     </div>
   );
 }
